@@ -12,15 +12,18 @@ function setup() {
   g = random(256);
   b = random(256);
   
-  //setting the babkground
+//setting the babkground
   background('lightblue');
 }
 
-//draw circle and fills the color
+
+//draw circle and text and fills the color
 function draw() {
   fill(r,g,b);
-  // fill(10);
-  circle(250, 300, 250); 
+  circle(250, 300, 250);
+  textSize(48)
+  textStyle(BOLD)
+  text('Click to change color',5,100);
 }
 
 //mouse click changes the rgb of the fill
